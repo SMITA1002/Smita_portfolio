@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#about {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+}
+
+#skills {
+    background-color: #e9ecef;
+    padding: 50px 0;
+}
+
+#projects {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#internship, #certifications {
+    padding: 50px 0;
+}
+
+#contact {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.card {
+    margin-bottom: 30px;
+}

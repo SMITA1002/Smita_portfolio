@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smita Powalkar - Full-Stack Java Developer</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        <style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+    }
+
+    .navbar {
+        background-color: #343a40; /* Dark background for navbar */
+    }
+
+    .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa;
+        background-color: #495057; /* Hover effect on navbar links */
+    }
+
+    section {
+        display: none; /* Initially hide all sections */
+        padding: 40px 0;
+    }
+
+    section.visible {
+        display: block; /* Show section when active */
+    }
+
+    .card {
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Hover effect on cards */
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+    footer {
+        background-color: #343a40;
+    }
+
+    .contact-icons a {
+        color: #343a40;
+        font-size: 24px;
+        margin: 0 10px;
+    }
+
+    .contact-icons a:hover {
+        color: #007bff;
+    }
+
+    .contact-icons span {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    /* Increased font sizes for Smita Powalkar and Full-Stack Java Developer */
+    #hero h1 {
+        font-size: 5000px; /* Smita Powalkar */
+    }
+
+    #hero p.lead {
+        font-size: 400px; /* Full-Stack Java Developer */
+    }
+
+    /* Custom alignment for navbar */
+    .navbar-nav {
+        margin-left: -100px; 
+    }
+</style>
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <!--<a class="navbar-brand" href="#">Smita Powalkar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('about')">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('skills')">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('projects')">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('certifications')">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p><strong>Smita Powalkar</strong><br>
+                    <strong>Full-Stack Java Developer</strong><br>
+                    <p>Aspiring software professional seeking challenging opportunities on cutting-edge technologies..</p>
+                    <div class="contact-icons">
+                        <!-- Mobile Icon and Number -->
+                        <a href="tel:9146265253" class="fas fa-phone-alt" title="Call Smita"></a>
+                        <span>9146265253</span>
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com/in/smita-powalkar" target="_blank" class="fab fa-linkedin"
+                            title="LinkedIn"></a>
+                        <!-- GitHub Icon -->
+                        <a href="https://github.com/SMITA1002" target="_blank" class="fab fa-github" title="GitHub"></a>
+                    </div>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><strong>Programming Technologies:</strong> JAVA, J2EE</li>
+                    <li><strong>Web Technologies:</strong> HTML/HTML5, CSS/CSS3, JavaScript, Bootstrap</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li><strong>IDE:</strong> VS Code, Eclipse, Notepad++</li>
+                    <li><strong>Database:</strong> SQL Server, Oracle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center mb-4">Academic Projects</h2>
+        <div class="row">
+            <!-- Project 1: HOTEL NILESH WEBSITE -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">HOTEL NILESH WEBSITE</h5>
+                        <p class="card-text">Developed a comprehensive website for a hotel, enabling table booking and feedback processes. Designed and developed using web technologies to create a scalable and secure platform.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Health Club Management System -->
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Club Management System</h5>
+                        <p class="card-text">Developed an effective management system for a health club to automate client record keeping and store data. Used web technologies for a seamless user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Skills and Certifications Section -->
+    <section id="certifications" class="container mt-5">
+        <h2 class="text-center mb-4">Extra Skills and Certifications</h2>
+        <ul>
+            <li>Junior Java Full Stack Development training offered by Generation India and Vinsys IT Services</li>
+            <li>Code Foundations Skill Path (CodeAcademy)</li>
+            <li>Learn Git And GitHub (CodeAcademy)</li>
+            <li>Learn How to Code (CodeAcademy)</li>
+            <li>TypeScript (CodeAcademy)</li>
+            <li>Learn CommandLine (CodeAcademy)</li>
+            <li>Learn SQL (CodeAcademy)</li>
+            <li>Learn Spring (CodeAcademy)</li>
+            <li>Learn Javascript (CodeAcademy)</li>
+            <li>Learn Java (CodeAcademy)</li>
+            <li>Learn Intermediate Java (CodeAcademy)</li>
+            <li>Learn HTML (CodeAcademy)</li>
+            <li>Angular JS_1.X (CodeAcademy)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Smita Powalkar | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('visible');
+            });
+
+            // Show the clicked section
+            const section = document.getElementById(sectionId);
+            section.classList.add('visible');
+        }
+
+        // Optionally, show the "About Me" section by default
+        document.addEventListener('DOMContentLoaded', function () {
+            showSection('about');
+        });
+    </script>
+</body>
+
+</html>
